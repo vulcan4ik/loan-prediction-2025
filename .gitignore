@@ -1,0 +1,36 @@
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Jupyter #
+####################
+.cache/
+.config/
+.ipython/
+.local/
+.ipynb_checkpoints
+.jupyter/
+
+# Other #
+#####################
+lib/__pycache__/
+
+# Игнорировать данные скачанные через gdown
+
+ ipynb/*.csv
+ ipynb/*.zipdocke
+ data/*.zip
+
+# Игнорировать временные файлы LSP и Codeium
+.virtual_documents/
+codeium-jupyter/
+.ipynb_checkpoints/
+
+# Игнорировать окружение
+.env
