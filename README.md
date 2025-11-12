@@ -1,4 +1,4 @@
-#  Loan Payback Prediction
+#  [![Loan Payback Prediction](ipynb/loan-prediction-11-2025.ipynb)] 
 
 > Прогнозирование выплаты кредита с помощью CatBoost  
 > **Kaggle Playground Series S5E11 | Score: 0.92317 (ROC-AUC)**  
