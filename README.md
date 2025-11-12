@@ -38,15 +38,18 @@
 - Проверка категориальных признаков: `employment_status`, `education_level`, `loan_purpose`.  
 - Выявление выбросов методом IQR и PHIK-корреляция для категорий.
 
-### 2. **Feature Engineering (12 новых признаков)**
+### 2. **Feature Engineering (13 новых признаков)**
 
-```python
+```
 loan_to_income = loan_amount / annual_income
 debt_interest_ratio = (loan_amount * (1 + interest_rate/100)) / annual_income
 credit_risk_index = credit_score * (1 - debt_to_income_ratio)
 loan_income_stress = loan_amount / (annual_income * debt_to_income_ratio)
 log_annual_income = log1p(annual_income)
 log_loan_amount = log1p(loan_amount)
+debt_score_ratio = debt_to_income_ratio / credit_score
+grade_num = map(grade_subgrade)
+combined_rating = grade_num + (1 - subgrade/10)
 ```
 
 Добавлены рейтинговые признаки (`grade_num`, `combined_rating`, `default_rate`),  
